@@ -12,9 +12,9 @@
 html { scroll-behavior: smooth; }
 body { margin: 0; color: var(--ink); background: var(--cream); font-family: "DM Sans", sans-serif; }
 a { color: inherit; text-decoration: none; }
-.site-header { display: flex; align-items: center; justify-content: space-between; max-width: 1180px; margin: 0 auto; padding: 22px 5vw 16px; position: relative; z-index: 2; }
-.brand { width: 164px; position: absolute; top: 21px; left: 50%; transform: translateX(-50%); }
-.brand img { display: block; width: 100%; height: auto; border-radius: 3px; }
+.site-header { align-items: flex-start; display: flex; justify-content: space-between; left: 0; padding: 22px max(3vw, 24px); position: absolute; right: 0; top: 0; z-index: 2; }
+.brand { align-items: center; background: var(--cream); border: 3px solid var(--tomato); box-shadow: 6px 6px 0 rgba(36, 33, 29, .16); display: flex; justify-content: center; padding: 8px 11px; width: 210px; }
+.brand img { display: block; height: 76px; object-fit: contain; width: 100%; }
 .main-nav { display: flex; gap: 30px; margin-left: auto; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .main-nav a { padding: 8px 0; border-bottom: 2px solid transparent; transition: border-color .2s, color .2s; }
 .main-nav a:hover { color: var(--tomato); border-color: var(--tomato); }
@@ -68,7 +68,8 @@ h2 { font-size: clamp(3.5rem, 6vw, 6.5rem); margin-bottom: 22px; }
 .site-footer span:first-child { color: var(--tomato); font-family: Pacifico, cursive; font-size: 1rem; }
 @media (max-width: 800px) {
 	.site-header { min-height: 118px; padding: 18px 6vw; }
-	.brand { top: 18px; width: 142px; }
+	.brand { padding: 5px 8px; width: 156px; }
+	.brand img { height: 57px; }
 	.menu-toggle { background: none; border: 1px solid var(--ink); cursor: pointer; display: block; font: inherit; font-size: .72rem; font-weight: 700; letter-spacing: .08em; padding: 8px 12px; text-transform: uppercase; }
 	.main-nav { background: var(--cream); border: 1px solid var(--ink); display: none; flex-direction: column; gap: 0; left: 6vw; padding: 8px 18px; position: absolute; right: 6vw; top: 70px; }
 	.main-nav.is-open { display: flex; }
