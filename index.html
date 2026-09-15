@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tomaten Koekjes van La Strada: een warme Italiaanse snack bij Yuverta Nederweert.">
+    <title>Tomaten Koekjes | La Strada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="La Strada home">
+            <img src="logo.png" alt="Tomaten Koekjes van La Strada">
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+        <nav id="main-nav" class="main-nav" aria-label="Hoofdnavigatie">
+            <a href="#het-koekje">Het koekje</a>
+            <a href="#ingredienten">Ingrediënten</a>
+            <a href="#vind-ons">Vind ons</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-photo" role="img" aria-label="La Strada foodtruck">
+                <img src="foodtruck.jpg" alt="La Strada foodtruck" onerror="this.onerror=null;this.src='IMG_20260915_140406241.jpg';">
+            </div>
+            <div class="hero-copy">
+                <p class="eyebrow">Vers uit de foodtruck · Nederweert</p>
+                <h1 id="hero-title">Een stukje <em>Italië</em> in elke hap.</h1>
+                <p class="hero-intro">Knapperig pizzadeeg, rijke tomatensaus, gesmolten kaas en Italiaanse kruiden. Het Tomaten Koekje is klein van formaat, maar groots van smaak.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#vind-ons">Kom proeven <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="#het-koekje">Ontdek het koekje <span aria-hidden="true">↓</span></a>
+                </div>
+            </div>
+            <div class="hero-stamp" aria-label="Vers gemaakt met liefde">
+                <span>vers</span>
+                <strong>met<br>liefde</strong>
+                <small>La Strada</small>
+            </div>
+        </section>
+
+        <section id="het-koekje" class="product-section section-grid">
+            <div class="section-heading">
+                <p class="eyebrow">De nieuwe klassieker</p>
+                <h2>Meer dan een koekje.</h2>
+                <p>Een hartige traktatie met de ziel van een pizza. Perfect voor tussendoor, na school of om samen te delen.</p>
+            </div>
+            <div class="feature-list">
+                <article class="feature-item">
+                    <span class="feature-number">01</span>
+                    <div><h3>Goudbruin gebakken</h3><p>Vers deeg met die fijne, knapperige bite.</p></div>
+                </article>
+                <article class="feature-item">
+                    <span class="feature-number">02</span>
+                    <div><h3>Vol van smaak</h3><p>Tomaat, kaas en kruiden in een perfecte balans.</p></div>
+                </article>
+                <article class="feature-item">
+                    <span class="feature-number">03</span>
+                    <div><h3>Met aandacht gemaakt</h3><p>Geserveerd vanuit onze foodtruck bij Yuverta.</p></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="ingredienten" class="ingredients-section">
+            <div class="ingredients-intro">
+                <p class="eyebrow">Simpel. Goed. Italiaans.</p>
+                <h2>De smaak zit<br>in de <em>basis.</em></h2>
+            </div>
+            <div class="ingredient-cards">
+                <div class="ingredient-card"><span class="ingredient-icon">◉</span><strong>Tomatensaus</strong><span>Rijk & kruidig</span></div>
+                <div class="ingredient-card"><span class="ingredient-icon">✦</span><strong>Gesmolten kaas</strong><span>Zacht & goudbruin</span></div>
+                <div class="ingredient-card"><span class="ingredient-icon">♧</span><strong>Italiaanse kruiden</strong><span>Geurig & vers</span></div>
+            </div>
+        </section>
+
+        <section id="vind-ons" class="location-section">
+            <div class="location-card">
+                <div>
+                    <p class="eyebrow">Welkom in Nederweert!</p>
+                    <h2>Tot straks bij<br><em>La Strada.</em></h2>
+                    <p>Je vindt onze foodtruck bij <strong>Yuverta Nederweert</strong>. Kom langs voor een warm Tomaten Koekje en een flinke dosis Italiaanse gezelligheid.</p>
+                </div>
+                <div class="location-pin" aria-hidden="true">⌖</div>
+                <a class="button button-light" href="https://www.google.com/maps/search/?api=1&query=Yuverta+Nederweert" target="_blank" rel="noreferrer">Bekijk de locatie <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>La Strada</span><span>Tomaten Koekjes met liefde gemaakt</span><span>© <span id="year"></span></span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
