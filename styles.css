@@ -57,6 +57,17 @@ h1 em, h2 em { color: var(--tomato); font-family: Pacifico, cursive; font-size: 
 .button-primary { background: var(--tomato); color: #fff; }
 .button-primary:hover { background: var(--tomato-dark); }
 .text-link { border-bottom: 1px solid var(--ink); font-size: .85rem; font-weight: 700; padding-bottom: 4px; }
+.video-section { align-items: center; background: var(--cream); display: grid; gap: 70px; grid-template-columns: .75fr 1.25fr; margin: 0 auto; max-width: 1180px; padding: 105px 5vw; }
+.video-copy > p:last-child { color: #5c554c; font-size: 1rem; line-height: 1.7; max-width: 340px; }
+.video-frame { aspect-ratio: 16 / 9; background: var(--ink); overflow: hidden; position: relative; }
+.video-frame video { display: block; height: 100%; object-fit: cover; position: relative; width: 100%; z-index: 1; }
+.video-placeholder { align-items: center; color: var(--cream); display: flex; flex-direction: column; font-family: "Bebas Neue", Impact, sans-serif; font-size: 2rem; inset: 0; justify-content: center; letter-spacing: .08em; pointer-events: none; position: absolute; text-align: center; z-index: 2; }
+.video-frame.has-video .video-placeholder { display: none; }
+.video-placeholder small { color: var(--yellow); font-family: "DM Sans", sans-serif; font-size: .7rem; letter-spacing: .15em; text-transform: uppercase; }
+.music-toggle { align-items: center; background: var(--tomato); border: 2px solid var(--cream); bottom: 22px; box-shadow: 4px 4px 0 rgba(36, 33, 29, .18); color: var(--cream); cursor: pointer; display: flex; gap: 10px; padding: 11px 15px; position: fixed; right: 22px; z-index: 5; }
+.music-toggle:hover, .music-toggle.is-playing { background: var(--tomato-dark); }
+.music-icon { font-size: 1.25rem; line-height: 1; }
+.music-label { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .hero-stamp { align-items: center; background: var(--tomato); border: 2px solid var(--cream); border-radius: 50%; color: var(--cream); display: flex; flex-direction: column; height: 172px; justify-content: center; position: absolute; right: 16%; top: 24%; transform: rotate(11deg); width: 172px; text-align: center; }
 .hero-stamp::before { border: 1px dashed var(--cream); border-radius: 50%; content: ""; inset: 8px; position: absolute; }
 .hero-stamp span { font-size: .8rem; text-transform: uppercase; }
@@ -100,6 +111,7 @@ h2 { font-size: clamp(3.5rem, 6vw, 6.5rem); margin-bottom: 22px; }
 	.hero-stamp { height: 130px; right: 9%; top: 61%; width: 130px; }
 	.hero-stamp strong { font-size: 1.1rem; }
 	.hero-intro { font-size: 1rem; max-width: 420px; }
+	.video-section { grid-template-columns: 1fr; gap: 35px; padding: 80px 7vw; }
 	.section-grid, .ingredients-section { grid-template-columns: 1fr; gap: 45px; padding: 80px 7vw; }
 	.ingredients-section { gap: 10px; }
 	.location-section { padding: 70px 7vw; }
@@ -107,6 +119,7 @@ h2 { font-size: clamp(3.5rem, 6vw, 6.5rem); margin-bottom: 22px; }
 	.location-pin { grid-column: 2; grid-row: 1; font-size: 4rem; }
 	.location-card .button-light { grid-column: 1 / -1; justify-self: start; }
 	.site-footer { flex-wrap: wrap; padding: 22px 7vw; }
+	.music-toggle { bottom: 14px; right: 14px; }
 }
 @media (max-width: 480px) {
 	.hero-actions { align-items: flex-start; flex-direction: column; gap: 20px; }

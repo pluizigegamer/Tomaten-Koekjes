@@ -44,6 +44,21 @@
             </div>
         </section>
 
+        <section class="video-section" aria-labelledby="video-title">
+            <div class="video-copy">
+                <p class="eyebrow">Even binnenkijken</p>
+                <h2 id="video-title">Proef de sfeer<br>van <em>La Strada.</em></h2>
+                <p>Hier komt binnenkort onze introductievideo. Een korte blik op de foodtruck, het bakken en natuurlijk het Tomaten Koekje.</p>
+            </div>
+            <div class="video-frame">
+                <video id="intro-video" controls preload="metadata" aria-label="Introductievideo van La Strada">
+                    <source src="intro.mp4" type="video/mp4">
+                    Je browser kan deze video niet afspelen.
+                </video>
+                <span class="video-placeholder">intro.mp4<br><small>binnenkort te zien</small></span>
+            </div>
+        </section>
+
         <section id="het-koekje" class="product-section section-grid">
             <div class="section-heading">
                 <p class="eyebrow">De nieuwe klassieker</p>
@@ -90,6 +105,14 @@
             </div>
         </section>
     </main>
+
+    <audio id="background-music" loop preload="metadata">
+        <source src="Een_hapje_bij_La_Stada.mp3" type="audio/mpeg">
+    </audio>
+    <button class="music-toggle" type="button" aria-pressed="false" aria-label="Muziek aanzetten">
+        <span class="music-icon" aria-hidden="true">♪</span>
+        <span class="music-label">Muziek aan</span>
+    </button>
 
     <footer class="site-footer">
         <span>La Strada</span><span>Tomaten Koekjes met liefde gemaakt</span><span>© <span id="year"></span></span>
