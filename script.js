@@ -19,7 +19,7 @@ mainNav?.querySelectorAll('a').forEach((link) => {
 
 document.querySelector('#year').textContent = new Date().getFullYear();
 
-music.volume = 0.08;
+music.volume = 1;
 
 musicToggle?.addEventListener('click', async () => {
 	if (music.paused) {
