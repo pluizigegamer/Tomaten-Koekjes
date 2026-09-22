@@ -50,6 +50,10 @@ introVideo?.addEventListener('play', () => {
 	if (musicToggle) musicToggle.querySelector('.music-label').textContent = 'Muziek aan';
 });
 
-introVideo?.addEventListener('loadeddata', () => {
+introVideo?.addEventListener('loadedmetadata', () => {
 	videoFrame?.classList.add('has-video');
+});
+
+introVideo?.addEventListener('error', () => {
+	console.error('De introductievideo kon niet worden geladen.', introVideo.error);
 });
