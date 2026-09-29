@@ -19,7 +19,7 @@ mainNav?.querySelectorAll('a').forEach((link) => {
 
 document.querySelector('#year').textContent = new Date().getFullYear();
 
-music.volume = 2;
+music.volume = 1;
 
 musicToggle?.addEventListener('click', async () => {
 	if (music.paused) {
@@ -52,4 +52,8 @@ introVideo?.addEventListener('play', () => {
 
 introVideo?.addEventListener('loadeddata', () => {
 	videoFrame?.classList.add('has-video');
+});
+
+introVideo?.addEventListener('error', () => {
+	console.error('De introductievideo kon niet worden geladen.', introVideo.error);
 });
