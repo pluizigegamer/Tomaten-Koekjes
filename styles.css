@@ -95,7 +95,9 @@ h2 { font-size: clamp(3.5rem, 6vw, 6.5rem); margin-bottom: 22px; }
 .location-card h2 { margin-bottom: 15px; }
 .location-card h2 em { color: var(--yellow); }
 .location-card p:last-child { font-size: .95rem; line-height: 1.65; margin-bottom: 0; max-width: 480px; }
+.location-visual { align-items: center; display: flex; gap: 12px; }
 .location-pin { color: var(--yellow); font-size: 6rem; line-height: 1; transform: rotate(180deg); }
+.location-visual img { aspect-ratio: 1.1; border: 2px solid var(--cream); height: auto; object-fit: cover; width: clamp(76px, 10vw, 116px); }
 .button-light { background: var(--cream); color: var(--tomato-dark); }
 .site-footer { display: flex; justify-content: space-between; gap: 20px; padding: 22px 5vw; color: #766f65; font-size: .72rem; letter-spacing: .04em; }
 .site-footer span:first-child { color: var(--tomato); font-family: Pacifico, cursive; font-size: 1rem; }
@@ -116,7 +118,9 @@ h2 { font-size: clamp(3.5rem, 6vw, 6.5rem); margin-bottom: 22px; }
 	.ingredients-section { gap: 10px; }
 	.location-section { padding: 70px 7vw; }
 	.location-card { align-items: start; grid-template-columns: 1fr auto; }
-	.location-pin { grid-column: 2; grid-row: 1; font-size: 4rem; }
+	.location-visual { grid-column: 2; grid-row: 1; }
+	.location-pin { font-size: 3.5rem; }
+	.location-visual img { width: 82px; }
 	.location-card .button-light { grid-column: 1 / -1; justify-self: start; }
 	.site-footer { flex-wrap: wrap; padding: 22px 7vw; }
 	.music-toggle { bottom: 14px; right: 14px; }
@@ -126,4 +130,7 @@ h2 { font-size: clamp(3.5rem, 6vw, 6.5rem); margin-bottom: 22px; }
 	.hero-stamp { top: 66%; }
 	.ingredient-cards { grid-template-columns: 1fr; }
 	.ingredient-card { min-height: 120px; }
+	.location-visual { gap: 6px; }
+	.location-pin { font-size: 3rem; }
+	.location-visual img { width: 70px; }
 }
